@@ -7,4 +7,8 @@ from . import views
 urlpatterns = [
     #主页
     url(r'^$',views.index,name='index'),
+
+    #显示说有的主题
+
+    url(r'^topics/$', views.topics,name='topics'),
 ]
