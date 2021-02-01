@@ -11,4 +11,10 @@ urlpatterns = [
     #显示说有的主题
 
     url(r'^topics/$', views.topics,name='topics'),
+
+    #特定主体的详细页
+    url(r'^topics/(?P<topic_id>\d+)$', views.topic, name='topic'),
+
+    #用户添加新主题的网页
+    url(r'^new_topic/$', views.new_topic, name='new_topic'),
 ]
